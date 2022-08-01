@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryNameTitle"
+                style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_repository_name"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMainRepositoryCountStarsTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryNameValue"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/textViewMainRepositoryNameTitle"
+                app:layout_constraintStart_toStartOf="@+id/textViewMainRepositoryNameTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMainRepositoryNameTitle"
+                tools:text="_nome" />
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryCountStarsTitle"
+                style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/main_repository_stars_count"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewMainRepositoryNameTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryCountStartsValue"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewMainRepositoryCountStarsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMainRepositoryCountStarsTitle"
+                tools:text="_quantidades" />
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryForkTitle"
+                style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/main_repository_fork_count"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMainRepositoryNameAuthorTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMainRepositoryNameValue" />
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryForkValue"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/textViewMainRepositoryForkTitle"
+                app:layout_constraintStart_toStartOf="@+id/textViewMainRepositoryForkTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMainRepositoryForkTitle"
+                tools:text="_quantidade/forks" />
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryNameAuthorTitle"
+                style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/main_repository_fork_author"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewMainRepositoryForkTitle"
+                app:layout_constraintTop_toTopOf="@+id/textViewMainRepositoryForkTitle" />
+
+            <TextView
+                android:id="@+id/textViewMainRepositoryNameAuthorValue"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/textViewMainRepositoryNameAuthorTitle"
+                app:layout_constraintStart_toStartOf="@+id/textViewMainRepositoryNameAuthorTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMainRepositoryNameAuthorTitle"
+                tools:text="_nomeAutor" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewMainRepositoryAuthorPhoto"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMainRepositoryForkValue" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
