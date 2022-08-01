@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="main_repository_name">Repositório</string>
+    <string name="main_repository_stars_count">Estrelas</string>
+    <string name="main_repository_fork_count">Forks</string>
+    <string name="main_repository_fork_author">Autor</string>
+</resources>
